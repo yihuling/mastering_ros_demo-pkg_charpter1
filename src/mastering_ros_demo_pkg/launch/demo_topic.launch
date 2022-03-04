@@ -1,0 +1,4 @@
+<launch>
+  <node name = "publish" pkg = "mastering_ros_demo_pkg" type = "demo_topic_publisher" output = "screen" />
+  <node type = "demo_topic_subscriber" name = "subscriber" pkg = "mastering_ros_demo_pkg" output = "screen" launch-prefix="xterm -e" />
+</launch>
